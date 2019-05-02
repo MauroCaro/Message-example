@@ -65,7 +65,7 @@ class DefaultPostFragment : BaseFragment(), ItemPostListener {
                 override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                     val adapter = rv_default_post?.adapter as ItemPostAdapter
                     adapter.removeAt(viewHolder.adapterPosition)
-                    onListenerPost.deleteItemById(listPost?.get(viewHolder.adapterPosition)!!.id!!)
+                    onListenerPost.deleteItemById(listPost?.get(viewHolder.layoutPosition)!!.id!!)
                 }
             }
             val itemTouchHelper = ItemTouchHelper(swipeHandler)
