@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MessagesExample</string>
+    <string name="title_posts">Posts</string>
+    <string name="title_detail">Post information</string>
+    <string name="bottom_navigation_Action_name_home">Home</string>
+    <string name="bottom_navigation_Action_name_favorites">Favorites</string>
+    <string name="toolbar_options_Action_name_refresh">Favorites</string>
+    <string name="dialog_delete_post_title">Delete all posts</string>
+    <string name="dialog_delete_post_message">¿Are you sure you want to delete all the posts?</string>
+    <string name="dialog_delete_post_confirmation">Delete</string>
+    <string name="dialog_delete_post_cancel">Cancel</string>
+    <string name="detail_post_description_label">Description</string>
+    <string name="detail_post_user_label">User information</string>
+</resources>

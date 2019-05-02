@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.DetailPostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+            android:id="@+id/detail_post_description_label"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium_large"
+            android:text="@string/detail_post_description_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_toolbar"/>
+
+    <TextView
+            android:id="@+id/detail_post_description_text"
+            style="@style/textNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium_large"
+            android:text="@string/detail_post_description_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_description_label"
+            tools:text="est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"/>
+
+
+    <TextView
+            android:id="@+id/detail_post_user_label"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium_large"
+            android:text="@string/detail_post_user_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_description_text"/>
+
+    <TextView
+            android:id="@+id/detail_post_name_text"
+            style="@style/textNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_user_label"/>
+
+    <TextView
+            android:id="@+id/detail_post_email_text"
+            style="@style/textNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_name_text"/>
+
+    <TextView
+            android:id="@+id/detail_post_phone_text"
+            style="@style/textNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_email_text"/>
+
+    <TextView
+            android:id="@+id/detail_post_web_site_text"
+            style="@style/textNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginEnd="@dimen/margin_medium_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_post_phone_text"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
